@@ -1,6 +1,6 @@
 let mongoose=require('mongoose')
 
-const connection=mongoose.connect('mongodb://heroku_v8vc78vc:vfa41pdoa0bcen0fuagete2mck@ds041583.mlab.com:41583/heroku_v8vc78vc)
+const connection=mongoose.connect('mongodb://heroku_v8vc78vc:vfa41pdoa0bcen0fuagete2mck@ds041583.mlab.com:41583/heroku_v8vc78vc',{useNewUrlParser: true});
 
 connection.then(res=>
 console.log("connection established:::"),err=>
